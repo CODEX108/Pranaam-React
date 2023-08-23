@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Pranaam React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <!-- Bridge between react and the browers's DOM -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+      //creating an h1 element inside react
+                              // (<tagname>,<an object>, <the content inside the tag>)
+      const heading = React.createElement("h1", {}, "Hello World from React");
+      //creating a root => this root is the actual div
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      //rendering the root into the DOM
+      root.render(heading);
+    </script>
+  </body>
+</html>
