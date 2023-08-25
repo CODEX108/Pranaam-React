@@ -1,0 +1,22 @@
+{
+  "name": "pranaam-react",
+  "version": "1.0.0",
+  "description": "We are igniting our react application",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CODEX108/Pranaam-React.git"
+  },
+  "author": "Manjiri C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CODEX108/Pranaam-React/issues"
+  },
+  "homepage": "https://github.com/CODEX108/Pranaam-React#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
