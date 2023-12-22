@@ -3,8 +3,8 @@
 ```js
 const heading = React.createElement(
     "h1",
-    {id:"heading},
-    "Pranaam React
+    {id:"heading"},
+    "Pranaam React"
 );
 
 const root  = ReactDOM.createRoot(document.getElementById("root"));
@@ -56,11 +56,104 @@ const newCompo = () =>(
     </div>
 )
 
-const root = reactDOM.createRoot(document.getelementById("root));
+const root = reactDOM.createRoot(document.getelementById("root"));
 
 root.render(<newCompo/>);
 
-
 ```
+
+### Assignment
+● What is JSX?
+● Superpowers of JSX
+● Role of type attribute in script tag? What options can I use there?
+● ```{TitleComponent}``` vs ```{<TitleComponent/>}``` vs
+```{<TitleComponent></TitleComponent>}``` in JSX
+
+> ### Role of `type` Attribute in `<script>` Tag:
+
+The `type` attribute in the `<script>` tag specifies the scripting language used in the script. However, for JavaScript, the `type` attribute is not required. In modern HTML, you can omit the `type` attribute for JavaScript, and the browser will assume it's JavaScript by default.
+
+For example:
+
+```html
+<script>
+  // JavaScript code here
+</script>
+```
+
+Or without the `type` attribute:
+
+```html
+<script>
+  // JavaScript code here
+</script>
+```
+
+In HTML5, the default `type` for the `<script>` tag is `"text/javascript"`. If you are using JavaScript, it's common to see the `type` attribute omitted.
+
+### JSX: `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}`:
+
+In JSX, the three expressions you provided have slightly different meanings:
+
+1. **`{TitleComponent}`:**
+   - This assumes that `TitleComponent` is a variable holding a React component. It's used to include the component as a child in the JSX structure.
+
+   Example:
+   ```jsx
+   const TitleComponent = <h1>Title Component</h1>;
+
+   const App = () => (
+     <div>
+       {TitleComponent}
+       <p>Other content</p>
+     </div>
+   );
+   ```
+
+2. **`{<TitleComponent/>}`:**
+   - This directly renders the `TitleComponent` React component as a self-closing tag. It's a concise way to include the component without having to separately declare it as a variable.
+
+   Example:
+   ```jsx
+   const App = () => (
+     <div>
+       {<TitleComponent/>}
+       <p>Other content</p>
+     </div>
+   );
+   ```
+
+3. **`{<TitleComponent></TitleComponent>}`:**
+   - This is another way to directly include the `TitleComponent` in the JSX, but with an explicit opening and closing tag.
+
+   Example:
+   ```jsx
+   const App = () => (
+     <div>
+       {<TitleComponent></TitleComponent>}
+       <p>Other content</p>
+     </div>
+   );
+   ```
+
+In practice, the choice between these forms depends on your preference and the specific use case. The second form `{<TitleComponent/>}` is often preferred when you want to include the component directly without introducing an extra variable. The third form `{<TitleComponent></TitleComponent>}` is less common and typically not necessary in most cases. The first form `{TitleComponent}` is useful when you already have the component stored in a variable.
+
+Coding Assignment:
+● Create a Nested header Element using React.createElement(h1,h2,h3 inside a
+div with class “title”)
+○ Create the same element using JSX
+○ Create a functional component of the same with JSX
+○ Pass attributes into the tag in JSX
+○ Composition of Component(Add a component inside another)
+○ {TitleComponent} vs {<TitleComponent/>} vs
+```{<TitleComponent></TitleComponent>} ```in JSX
+● Create a Header Component from scratch using Functional Components with
+JSX
+○ Add a Logo on left
+○ Add a search bar in middle
+○ Add User icon on right
+○ Add CSS to make it look nice
+
 ### References
 - https://babeljs.io/
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-type
