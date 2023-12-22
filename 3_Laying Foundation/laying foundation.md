@@ -1,6 +1,6 @@
 
 ## With pure react
-`js
+```js
 const heading = React.createElement(
     "h1",
     {id:"heading},
@@ -9,16 +9,16 @@ const heading = React.createElement(
 
 const root  = ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);
-`
+```
 
 ## With JSX
 > JSX => Babel transpiles it => React.createElement => ReactElement - JS object - HTMLElement(render) 
-`js
+```js
 const jsxHeading = <h1 id="heading">Pranaam from jsx
 </h1>
 const root  = ReactDOM.createRoot(document.getElementById("root"));
 root.render(jsxHeading);
-`
+```
 
 
 ### JSX is not a part of react
@@ -37,7 +37,7 @@ React functional component -  a normal JS function which returns some JSX elemen
 ### Component composition => Composing two components in to one another 
 
 *Component Composition*
-`js
+```js
 
 import React from 'react';
 import ReactDom from 'react-dom/client;
@@ -61,6 +61,6 @@ const root = reactDOM.createRoot(document.getelementById("root));
 root.render(<newCompo/>);
 
 
-`
+```
 ### References
 - https://babeljs.io/
