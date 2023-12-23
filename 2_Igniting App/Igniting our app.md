@@ -20,3 +20,6 @@ Some good examples of dependencies which would be required at runtime include Re
 Some good examples of when to install devDependencies would be Nodemon, Babel, ESLint, and testing frameworks like Chai, Mocha, Enzyme, etc…
 
 >Whatever you can regenerate don't put it on github
+
+### What is Hot Module Replacement (HMR)?
+Hot Module Replacement (HMR) is a powerful feature designed to enhance the development process by providing real-time updates to modules within a running application. The beauty of HMR lies in its ability to make these updates without requiring a full page reload, thereby saving valuable time during development.
