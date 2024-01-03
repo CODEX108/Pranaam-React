@@ -14,6 +14,11 @@
                         - suggestion slides
                     - RestaurentCard Container
                         - Reatuarent Cards
+                                - Restaurent Image
+                                    - Restaurent Name
+                                    - Restaurent Rating
+                                    - Cuisine
+                                    - delivery time
                 <Footer/>
                     - Copyright
                     - Links
@@ -22,3 +27,8 @@
             
             ```
 
+
+### What are ```props```?
+- ```props``` are the properties that are passed from parent to child component they are normal arguments passed to a JS funciton
+
+### While usinf ```map``` function in react we need to provide a ```key``` prop to the parent element
