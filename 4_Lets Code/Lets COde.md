@@ -31,4 +31,8 @@
 ### What are ```props```?
 - ```props``` are the properties that are passed from parent to child component they are normal arguments passed to a JS funciton
 
+<<<<<<< Updated upstream
 ### While usinf ```map``` function in react we need to provide a ```key``` prop to the parent element
+=======
+### While usinf ```map``` function in react we need to provide a ```key``` prop to the parent element
+>>>>>>> Stashed changes
