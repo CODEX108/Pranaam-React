@@ -105,5 +105,59 @@ p {
     justify-content: center;
 }
 
+.filter{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: flex-around;
+    padding:1rem;
+    background-color:black;
+    color:white;
+    border-radius:4px;
+    border: none;
+    margin:1rem;
+}
+
+button{
+    padding:1rem;
+    background-color:gold;
+    color:black;
+    cursor:pointer;
+    border-radius:4px;
+    border: none;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+
+}
+
+.search-box input {
+    /* Apply the same styles as the .search-box */
+    display: flex;
+    padding: 1rem;
+    color:white;
+    background-color: #323436;
+    border-radius: 15px;
+    width: 100%; /* Adjust the width as needed */
+    margin: 1rem;
+    outline: none;
+}
+
+.search-btn {
+    background-color: #2c2c2c; /* Dark gray background color */
+    color: white; /* White text color */
+    padding: 1rem;
+    border: none; /* Remove border */
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Add hover effect for the button */
+.search-btn:hover {
+    background-color: #242424; /* Darker gray on hover */
+}
 
 /*# sourceMappingURL=/food-ord-app.9ad09f98.css.map */

@@ -29059,7 +29059,7 @@ var Body = function Body() {
     className: "rest-container"
   }, resList.map(function (restraurent) {
     return /*#__PURE__*/_react.default.createElement(RestaurentCard, {
-      key: resList.id,
+      key: restraurent.id,
       resData: restraurent
     });
   })));
@@ -29105,7 +29105,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51451" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52727" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
